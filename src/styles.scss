@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;400;600&display=swap');
+@import "variables";
+
+body {
+  width: 100%;
+  background-color: white;
+  color: $dark-primary-color;
+  font-size: 1.2em;
+}
+
+body, h1, h2, h3, h4, h5 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.iconoir {
+  vertical-align: middle;
+  line-height: 1px;
+  margin-right: 5px;
+}
+
+.red-filter {
+  filter: invert(24%) sepia(95%) saturate(7448%) hue-rotate(358deg) brightness(96%) contrast(116%);
+}
+
+.dark-filter {
+  filter: invert(0%) sepia(4%) saturate(6880%) hue-rotate(356deg) brightness(104%) contrast(65%);
+}
+
+.dark-filter:hover {
+  filter: invert(82%) sepia(37%) saturate(1317%) hue-rotate(310deg) brightness(98%) contrast(94%);
+}
+
+.toto>em {
+  -webkit-filter: drop-shadow(60px 0px blue);
+  filter: drop-shadow(60px 0px blue);
+  background-position: -100% 0;
+  margin-left: -60px;
+  display: block;
+  width: 61px; /* +1px for chrome bug...*/
+  height: 60px;
+}
+
+.toto {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+}

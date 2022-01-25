@@ -1,0 +1,157 @@
+<div style="text-align: center;">
+  <h1>Les prestations</h1>
+</div>
+<br><br>
+<div class="w3-row-padding">
+  <div class="w3-col w3-center m1" style="color: transparent">o</div>
+  <div class="w3-col w3-center m2" style="margin-bottom: 20px">
+    <app-service-card-alt
+      [title]="'Le Poids'"
+      [image]="'assets/weight.jpg'"
+      [imageAlt]="'Le Poids'"
+      (click)="this.isWeightPopupVisible = true"
+    ></app-service-card-alt>
+  </div>
+
+  <app-popup *ngIf="this.isWeightPopupVisible" (close)="this.closePopups()">
+    <h2>Le Poids</h2>
+    Je vous accompagne quelques soit votre objectif : prise de pois, perte de poids, stabilisation pondérale, …
+    Bilan diététique, 1 heure : 50 euros
+    Consultation de suivi, 30 min : 35 euros
+    Forfaits suivis diététique de 3 mois, 1 bilan diététique + 6 consultations : 245 euros
+    Forfaits suivis diététiques 6mois, 1 bilan diététique + 10 consultations : 365 euros
+    Différentes options sont possibles concernant les forfaits de suivi diététique.
+    N’hésitez pas à me contacter.
+  </app-popup>
+
+  <div class="w3-col w3-center m2" style="margin-bottom: 20px">
+    <app-service-card-alt
+      [title]="'Le bien être'"
+      [image]="'assets/health.jpg'"
+      [imageAlt]="'Le bien être'"
+      (click)="this.isHealthPopupVisible = true"
+    ></app-service-card-alt>
+  </div>
+
+  <app-popup *ngIf="this.isHealthPopupVisible" (close)="this.closePopups()">
+    <h2>Le bien être</h2>
+    Je vous accompagne dans votre démarche : équilibrer votre alimentation et vos apports nutritionnels, suivi de grossesse, suivi allaitement, diversification alimentaire de l’enfant, …
+
+    L’alimentation joue un rôle essentiel dans la santé et le bien-être d’où l’importance d’être accompagné lorsque vous entreprenez de prendre soin de vous à travers l’alimentation/dans votre démarche de prendre soin de vous par l’alimentation. (je ne parviens pas à trouver une belle formulation).
+
+    Bilan diététique, 1 heure : 50 euros
+    Consultation de suivi, 30 min : 35 euros
+    Forfaits suivis diététique de 3 mois, 1 bilan diététique + 6 consultations : 245 euros
+    Forfaits suivis diététiques 6mois, 1 bilan diététique + 10 consultations : 365 euros
+    Différentes options sont possibles concernant les forfaits de suivi diététique..
+    N’hésitez pas à me contacter.
+  </app-popup>
+
+  <div class="w3-col w3-center m2" style="margin-bottom: 20px">
+    <app-service-card-alt
+      [title]="'Les diverses pathologies'"
+      [image]="'assets/disease.jpg'"
+      [imageAlt]="'Les diverses pathologies'"
+      (click)="this.isDiseasePopupVisible = true"
+    ></app-service-card-alt>
+  </div>
+
+  <app-popup *ngIf="this.isDiseasePopupVisible" (close)="this.closePopups()">
+    <h2>Les diverses pathologies</h2>
+    Diabète, allergie et intolérance alimentaire, maladie rénale, cancer, dénutrition, maladie cardio-vasculaire, excès de cholestérol, rectocolite hémorragique (RCH), maladie de Crohn, malabsorption intestinale, les troubles digestifs, obésité et surpoids, dysphagie, troubles du comportement alimentaires, …
+
+    Certaines maladies nécessitent des adaptations alimentaires et une éducation nutritionnelle, dans lesquelles je vous accompagne afin de vous donner les clés pour une meilleure santé ? / un meilleur confort de vie ?
+
+    Bilan diététique, 1h  : 50 euros
+    Consultation de suivi, 35 min : 35 euros
+    Forfaits suivis diététique de 3 mois, 1 bilan diététique + 6 consultations : 245 euros
+    Forfaits suivis diététiques 6mois, 1 bilan diététique + 10 consultations : 365 euros
+    Différentes options sont possibles concernant les forfaits de suivi diététique.
+    N’hésitez pas à me contacter.
+  </app-popup>
+
+
+  <div class="w3-col w3-center m2" style="margin-bottom: 20px">
+    <app-service-card-alt
+      [title]="'Le sport'"
+      [image]="'assets/sport.jpg'"
+      [imageAlt]="'Le sport'"
+      (click)="this.isSportPopupVisible = true"
+    ></app-service-card-alt>
+  </div>
+
+  <app-popup *ngIf="this.isSportPopupVisible" (close)="this.closePopups()">
+    <h2>Le sport</h2>
+    Un suivi diététique dans le cadre de votre pratique sportive a différents intérêts : optimiser les performances, favoriser une meilleure récupération, rétablir un poids de corps adapté à votre sport, …
+    Je vous accompagne dans l’amélioration de votre hygiène alimentaire, dans l’objectif d’influencer positivement votre pratique sportive. (phrase peut-être pas nécessaire)
+
+    Bilan diététique, 1h15 : 60 euros
+    Consultation de suivi, 40 min : 40 euros
+    Différentes options sont possibles concernant les forfaits de suivi diététique.*
+    N’hésitez pas à me contacter.
+
+    *Les forfaits suivi diététiques ne sont pas établis car certaines pratiques sportives auraient besoins de 6 consultations sur 3 mois tandis que d’autres 3 sur 3 mois. C’est pour cela que je ne mets pas de forfait sport. J’espère que cela ne fait pas trop bizarre par rapport aux autres encarts ?
+  </app-popup>
+
+  <div class="w3-col w3-center m2" style="margin-bottom: 20px">
+    <app-service-card-alt
+      [title]="'Ateliers et interventions'"
+      [image]="'assets/workshop.jpg'"
+      [imageAlt]="'Ateliers et interventions'"
+      (click)="this.isWorkshopPopupVisible = true"
+    ></app-service-card-alt>
+  </div>
+  <app-popup *ngIf="this.isWorkshopPopupVisible" (close)="this.closePopups()">
+    <h2>Ateliers et interventions</h2>
+    J’interviens au près de différentes structures sportives (club de sport, centre de fitness, salles de musculation), dans les établissements scolaires, dans les EHPADs, dans la presse écrite, à la radio, …
+
+    Je réalise une création de contenu en lien avec a diététique.
+
+    Devis sur demande. N’hésiter pas à me contacter
+  </app-popup>
+  <div class="w3-col w3-center m1" style="color: transparent">o</div>
+</div>
+<br><br>
+<!--div style="padding-bottom: 50px; text-align: center">
+  <button class="w3-hover-shadow"  style="cursor: pointer; background-color: #F39B6D; border: none; padding: 20px; border-radius: 1000px;">En savoir plus</button>
+</div-->
+<br><br>
+<div class="w3-row">
+  <div class="w3-third" style="padding: 40px">
+    <div style="text-align: center;">
+      <h3 style="color: #F39B6D;  font-weight: bold">Pour qui ?</h3>
+    </div>
+    <br>
+    <strong>Tout public</strong>
+    <br>
+    <ul>
+      <li>Enfants</li>
+      <li>Adolescents</li>
+      <li>Adultes</li>
+      <li>Femmes enceinte</li>
+      <li>Femmes allaitantes</li>
+      <li>Personnes âgées</li>
+      <li>Sportifs (débutants, intermédiaires, confirmés, de haut niveau)</li>
+    </ul>
+  </div>
+  <div class="w3-third" style="text-align: center; padding: 40px">
+    <h3 style="color: #F39B6D; font-weight: bold">Comment ça se passe ?</h3>
+    <br>
+    <div style="text-align: start">
+      Lors du premier entretien, je prends connaissance de votre problématique et symptômes associés,  de vos habitudes alimentaires, ainsi que du contexte dans lequel vous évoluez. Ensuite nous établissons, ensemble, des objectifs et un plan de soin diététique, qui s’organise en consultations de 30 minutes, afin que je vous accompagne au plus juste, dans vos changements alimentaires.
+      <br><br>
+      L’éducation nutritionnelle est au centre des suivis diététiques que je propose, afin de vous donner les clés pour une alimentation, équilibrée et variée,  qui vous correspond.
+    </div>
+  </div>
+  <div class="w3-third" style="text-align: center; padding: 40px">
+    <h3 style="color: #F39B6D; font-weight: bold">Où ?</h3>
+    <br>
+    <em class="iconoir iconoir-home-simple-door"></em>
+    <br><br>
+    A domicile dans un rayon de 15km autour de Mouriès (13)
+    <br><br><br><br>
+    <em class="iconoir iconoir-laptop"></em>
+    <br><br>
+    En visioconférence dans toute la france
+  </div>
+</div>

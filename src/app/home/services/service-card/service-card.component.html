@@ -1,0 +1,12 @@
+<div class="w3-card w3-hover-shadow w3-row service-card">
+  <div *ngIf="orientation === 'left'" class="w3-third">
+    <img src="{{ image }}" alt="{{ imageAlt }}">
+  </div>
+  <div style="margin: auto" class="w3-twothird">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
+  <div *ngIf="orientation === 'right'" class="w3-third">
+    <img src="{{ image }}" alt="{{ imageAlt }}">
+  </div>
+</div>

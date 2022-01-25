@@ -1,0 +1,9 @@
+<div class="w3-display-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; backdrop-filter: blur(8px);
+   background-color: rgba(44, 44, 44, 0.7)">
+  <div class="w3-display-middle" style="padding: 50px; border-radius: 50px; background-color: white">
+    <div style="text-align: right">
+      <em class="iconoir iconoir-cancel" (click)="this.close.emit()" style="cursor: pointer"></em>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>

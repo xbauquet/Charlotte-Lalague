@@ -1,0 +1,14 @@
+<footer style="position: relative">
+  <div class="roro"></div>
+  <div style="text-align: center; padding: 60px;" >
+    <div style="color: gray">
+      <a href="" (click)="this.isPopupVisible = true">Images</a><span style="margin-right: 15px; margin-left: 15px;">|</span><a href="">Icons</a>
+    </div>
+    <br><br>
+    Un projet fait avec <em class="iconoir iconoir-heart red-filter"></em> par <a href="https://github.com/xbauquet">xbauquet</a>
+  </div>
+</footer>
+
+<app-popup *ngIf="isPopupVisible" (close)="isPopupVisible = false">
+  <app-open-source></app-open-source>
+</app-popup>

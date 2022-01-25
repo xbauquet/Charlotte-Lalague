@@ -1,0 +1,43 @@
+@import "variables";
+
+.toto {
+  margin-top: 100px;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+}
+
+.me {
+  background: $gradient-green;
+  .section-container {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.about {
+  .section-container {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.services {
+  .section-container {
+    background-color: white;
+    padding-top: 60px;
+  }
+}
